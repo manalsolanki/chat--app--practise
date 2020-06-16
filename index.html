@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Chat-app</title>
+		<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body >
+		
+
+		<!-- Form: Input field, send button, 
+				 Messages: ordered list -->
+		<form id="userInput">
+			<input type = "text" id="userName">
+			<button type="submit" >Send UserName</button>
+		</form>
+		
+			<form id="sendMsg">
+				
+				<input type="text" id="txt">
+				<button type="submit">Send Messages</button>
+				
+			</form>
+		
+
+		<ol id="messages"></ol>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
