@@ -48,14 +48,16 @@ $msgForm.addEventListener('submit', (event) => {
 
 
 	socket.on('chatmsg', (data) => {
-		if(data.user == enteredUserName)
-		{
-			console.log("giiiii")
-		}
+		
+	
 		console.log(`${data.user} : ${data.msg}`)
 		const newMsg = document.createElement('p')
 		$msgList.appendChild(newMsg)
-		newMsg.style.color = "red"
-		newMsg.style.textAlign="center"
-		newMsg.textContent = data.msg
+		
+		newMsg.textContent =  data.msg
+		if(data.user == enteredUserName){
+			newMsg.style.textAlign="right"
+			newMsg.style.color = "red"
+			console.log("giiiii")
+		}
 	})

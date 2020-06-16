@@ -1,5 +1,14 @@
 body {
-	background-color: grey;
+	
 	
 }
 
+.msg{
+	position: relative;
+	height: 100vh;
+}
+#sendMsg{
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+}
