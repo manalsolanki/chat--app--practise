@@ -1,34 +1,39 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Chat-app</title>
-		<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/index.css">
-	</head>
-	<body >
-		
 
-		<!-- Form: Input field, send button, 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+	<title>Chat-app</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<h2>Chat Interface</h2>
+	<article>
+		<div class="form-chat">
+			<!-- Form: Input field, send button, 
 				 Messages: ordered list -->
-		<form id="userInput">
-			<input type = "text" id="userName">
-			<button type="submit" >Send UserName</button>
-		</form>
-		<div class="msg" id="messages"> 
-			<form id="sendMsg">
-				
-				<input type="text" id="txt">
-				<button type="submit">Send Messages</button>
-				
+			<h3 id="name"></h3>
+			<form id="userInput">
+				<input type="text" id="userName">
+				<button type="submit">Send UserName</button>
 			</form>
 		
-		</div>	
+			<div class="msg" id="messages">
+				<form id="sendMsg">
+					<input type="text" id="txt">
+					<button type="submit">Send Messages</button>
+				</form>
+			</div>
+		</div>
 		<!-- <ol id="messages"></ol> -->
+	</article>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/index.js"></script>
+</body>
 
-		<script src="/socket.io/socket.io.js"></script>
-		<script src="js/index.js"></script>
-	</body>
 </html>

@@ -1,14 +1,27 @@
-body {
-	
-	
+article{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0em;
 }
-
+h2{
+	text-align: center;
+}
+.form-chat1{
+	display: none;
+}
 .msg{
 	position: relative;
-	height: 100vh;
+	height: 80vh;
 }
 #sendMsg{
 	position: absolute;
 	bottom: 0;
 	z-index: 1;
+}
+.form-chat{
+	padding: 1em;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 25em;
 }
