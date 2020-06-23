@@ -28,3 +28,19 @@ ul.ul {
 	margin-inline-end: 0px;
 	padding-inline-start: 40px;
 }
+input, textarea, button {
+	border-image: none;
+	border-style: solid;
+	border-width: thin;
+	border-color: rgb(227, 216, 216);
+	vertical-align: middle;
+	font-size: inherit;
+	font-family: inherit;
+	padding: 10px 15px;
+    border: none;
+    background: whitesmoke;
+    border-radius: 5px;
+	width: 100%;
+
+}
+

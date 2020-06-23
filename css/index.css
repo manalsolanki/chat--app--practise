@@ -11,9 +11,11 @@ h2{
 	display: none;
 }
 .msg{
+
 	position: relative;
 	height: 80vh;
 }
+
 #sendMsg{
 	position: absolute;
 	bottom: 0;
@@ -24,4 +26,9 @@ h2{
     border-radius: 5px;
     border: 1px solid black;
     width: 25em;
+}
+.submit{
+	background-color:#4CAF50;
+	color: white;
+	margin-top: 1em;
 }
